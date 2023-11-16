@@ -1,3 +1,13 @@
+#importamos las librerias necesarias
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
+import plotly.io as pio
+pio.templates.default = "plotly_white"
+
+#leemos el csv
+data = pd.read_csv('retail_price.csv')
+
 #entrenemos un modelo de machine learning para la optimizacion de precios minoristas
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeRegressor
